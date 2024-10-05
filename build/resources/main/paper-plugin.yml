@@ -1,0 +1,22 @@
+api-version: "1.20"
+name: SystemLevel
+version: "1.0"
+main: ru.lewis.systemlevel.bootstrap.Bootstrap
+loader: ru.lewis.systemlevel.bootstrap.Loader
+author: Lewis Carrol
+has-open-classloader: false
+folia-supported: true
+dependencies:
+  server:
+    PlaceholderAPI:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    PlayerPoints:
+      load: BEFORE
+      required: true
+      join-classpath: true
+    helper:
+      load: BEFORE
+      required: true
+      join-classpath: true
